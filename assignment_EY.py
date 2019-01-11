@@ -69,6 +69,13 @@ captcha_image = Image.open(save_path)
 captcha_image = captcha_image.convert("RGBA")
 captcha_text = pytesseract.image_to_string(Image.open(captcha_image))
 
+
+def send_key(key, to_id, driver):
+    field = driver.find_element_by_id(to_id)
+    field.send_keys(key)
+
+## inputing values using the send_key function
+
 cin = "U45201RJ2012PTC038551"
 cin_id="companyID"
 cin_field = driver.find_element_by_id(cin_id)
