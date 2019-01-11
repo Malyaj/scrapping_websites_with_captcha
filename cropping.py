@@ -38,4 +38,6 @@ save_path = r"D:\Users\703143501\Documents\Genpact Internal\EY\cropped.png"
 #save_format = ".png"
 
 cropped_image = image_obj.crop(coords)
+
+## saving the image to disk
 cropped_image.save(save_path)
