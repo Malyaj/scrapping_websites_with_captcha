@@ -41,3 +41,5 @@ cropped_image = image_obj.crop(coords)
 
 ## saving the image to disk
 cropped_image.save(save_path)
+
+## consider implementing this a a class
